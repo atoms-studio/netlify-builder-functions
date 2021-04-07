@@ -6,6 +6,7 @@ require('axios')
 async function handler(event, context) {
   const nuxt = await loadNuxt({
     for: 'start',
+    configFile: path.join(__dirname, '_build/nuxt.config.js'),
     configOverrides: {
       buildDir: path.join(__dirname, '_build')
     }
