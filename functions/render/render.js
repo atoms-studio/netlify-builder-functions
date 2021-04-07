@@ -12,7 +12,7 @@ async function handler(event, context) {
     }
   })
 
-  const { html, error, redirected } = await nuxt.renderRoute(event.path)
+  const { html, error, redirected } = await nuxt.renderRoute(event.queryStringParameters.page || event.path)
 
   return {
     statusCode: 200,
