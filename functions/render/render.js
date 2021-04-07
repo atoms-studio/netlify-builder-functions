@@ -1,7 +1,7 @@
 const { builderFunction } = require('@netlify/functions')
 const { loadNuxt } = require('nuxt')
 const path = require('path')
-require('axios')
+require('@nuxtjs/axios')
 
 async function handler(event, context) {
   const nuxt = await loadNuxt({
