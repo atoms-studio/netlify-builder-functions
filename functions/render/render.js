@@ -13,7 +13,7 @@ async function handler(event, context) {
 
   const { html, error, redirected } = await nuxt.renderRoute('/')
 
-  console.log('rendered route')
+  console.log('rendered route', event)
 
   return {
       statusCode: 200,
