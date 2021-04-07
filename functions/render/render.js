@@ -1,8 +1,14 @@
 const { builderFunction } = require('@netlify/functions')
 const { loadNuxt } = require('nuxt')
+const path = require('path')
 
 async function handler(event, context) {
-  const nuxt = await loadNuxt({ for: 'start' })
+  const nuxt = await loadNuxt({
+    for: 'start',
+    configOverrides: {
+      buildDir: path.join(__dirname, '_build')
+    }
+  })
 
   const { html, error, redirected } = await nuxt.renderRoute('/')
 
