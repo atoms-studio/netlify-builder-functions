@@ -1,7 +1,7 @@
 [functions]
   directory = "functions"
 
-[redirects]
+[[redirects]]
   from = "/movies/*"
-  to = "/functions/render"
+  to = "/.netlify/functions/render"
   status = 200
