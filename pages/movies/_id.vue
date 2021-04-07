@@ -44,9 +44,3 @@
     },
   }
 </script>
-
-<style scoped>
-.aspect-ratio {
-  aspect-ratio: 3/4;
-}
-</style>

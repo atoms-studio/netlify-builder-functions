@@ -7,9 +7,10 @@
         Builder Functions
       </h1>
       <form class="mt-4 flex" @submit.prevent="search">
-        <input v-model="query" type="search" class="w-full shadow rounded px-4 py-2 focus:outline-none focus:ring focus:border-green-300" placeholder="Search movies" />
+        <input v-model="query" type="search" class="w-full shadow rounded px-4 py-2 focus:outline-none focus:ring focus:border-green-300" placeholder="Type a movie title and hit enter" />
         <button type="submit" class="px-4 py-2 bg-green-500 shadow ml-1 rounded text-white focus:outline-none focus:ring focus:border-green-600">Search</button>
       </form>
+      <p class="mt-4 text-center font-light">Search for movies, then click on one of the results.<br> The movie detail page will be cached after the first render.</p>
     </div>
     <div class="flex flex-wrap mt-4">
       <nuxt-link :to="{ name: 'movies-id', params: { id: result.imdbID } }" v-for="result of results" :key="result.imdbID" class="w-1/2 md:w-1/3 lg:w-1/4 2xl:w-auto p-2">
