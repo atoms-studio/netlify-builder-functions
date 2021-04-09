@@ -90,3 +90,5 @@ sw.*
 *.swp
 
 functions/render/_build/
+
+.output

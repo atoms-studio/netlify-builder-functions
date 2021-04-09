@@ -1,14 +1,9 @@
 [build]
   command = "yarn generate"
-  publish = "dist/"
-
-[functions]
-  directory = "functions"
+  publish = "dist"
+  functions = ".output/server"
 
 [[redirects]]
-  from = "/movies/*"
-  to = "/.netlify/functions/render"
+  from = "/*"
+  to = "/.netlify/functions/index"
   status = 200
-
-[[plugins]]
-  package = "/netlify-plugins/copy-build-artifacts"
