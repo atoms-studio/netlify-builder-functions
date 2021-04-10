@@ -3,17 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
     "build": "nuxt generate",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/axios": "^5.13.1",
-    "core-js": "^3.9.1",
-    "nuxt": "^2.15.3"
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .vue .",
+    "start": "node .output/server",
+    "test": "yarn lint --ext .vue"
   },
   "devDependencies": {
+    "@nuxtjs/axios": "^5.13.1",
+    "core-js": "^3.9.1",
+    "nuxt": "^2.15.4",
     "@netlify/functions": "^0.4.1",
     "@nuxt/nitro": "^0.3.0",
     "@nuxtjs/tailwindcss": "^4.0.1",
