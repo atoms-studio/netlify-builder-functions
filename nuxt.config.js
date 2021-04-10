@@ -53,9 +53,9 @@ export default {
   build: {
   },
 
-  nitro: {
-    preset: 'netlify_builder',
-  },
+  // nitro: {
+  //   preset: 'netlify_builder',
+  // },
 
   generate: {
     routes: ['/'],
