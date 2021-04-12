@@ -4,7 +4,7 @@
   },
   "functions": {
     "api/*.js": {
-      "memory": 640
+      "memory": 512
     }
   }
 }
