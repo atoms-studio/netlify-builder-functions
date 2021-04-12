@@ -3,7 +3,7 @@
     "silent": true
   },
   "functions": {
-    "api/test.js": {
+    "api/*.js": {
       "memory": 640
     }
   }
