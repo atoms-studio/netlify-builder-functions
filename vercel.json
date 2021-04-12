@@ -3,6 +3,9 @@
     "silent": true
   },
   "functions": {
+    ".vercel/functions/server/index": {
+      "memory": 512
+    },
     "api/*.js": {
       "memory": 512
     }
